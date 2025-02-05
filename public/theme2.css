@@ -1,0 +1,295 @@
+/* Blue Theme */
+
+*{
+    font-family: 'Squada One', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(218, 229, 235);
+    height: 100vh;
+}
+#main-container {
+    background-color: rgb(218, 229, 235);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+#reader-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#main-container span {
+    color: rgba(44, 62, 80, 1);
+}
+.logo-main {
+    display: flex;
+    height: auto;
+    width: 100%;
+    background-color: rgba(136,160,172,255);
+}
+.logo-container {
+    display: flex;
+    background-color: rgba(136,160,172,255);
+    margin-right: auto;
+}
+#logo {
+    max-height: 25px;
+    padding: 2px;
+}
+
+
+/* LEFT PANEL */
+
+#left-panel {
+    background-color: rgb(218, 229, 235);
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.input-items {
+    background-color: rgba(136,160,172,255);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0);
+    width: 85%;
+    height: 80%;
+    margin: 0;
+    justify-content: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-group span {
+    font-weight: bold;
+    width: 30%; /* Etiket genişliği */
+    text-align: left;
+    padding-right: 10px;
+}
+
+.input-group button {
+    padding: 0;
+    margin-left: 3px;
+    width: 8%;
+    height: 100%;
+
+}
+
+.input-group input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgb(218, 229, 235);
+}
+.input-group input:disabled {
+    background-color: rgb(187, 195, 199);
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: rgba(140,188,202,255);
+    color: rgba(44, 62, 80, 1);
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#max-button {
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    padding: 4px;
+}
+#scan-button {
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    padding: 4px;
+}
+
+#date-button {
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    padding: 4px;
+}
+
+
+button:hover {
+    background-color: rgba(140,200,220,255);
+}
+button:disabled {
+    background-color: rgb(97, 132, 150);
+    cursor: not-allowed;
+}
+
+
+/* RIGHT PANEL */
+
+#right-panel {
+    background-color: rgb(218, 229, 235);
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+.product-info {
+    background-color: rgba(136,160,172,255);
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 80%;
+    padding: 25px;
+    border-radius: 15px;
+    gap: 10px;
+    
+}
+#info-text {
+    background-color: rgb(218, 229, 235);
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px;
+    font-size: 20px;
+}
+
+#results-table-container {
+    background-color: white;
+    display: flex;
+    height: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px;
+    font-size: 20px;
+}
+
+
+
+#file-input {
+    display: none;
+}
+#top-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#top-div button {
+    width: 20%;
+    min-width: 100px;
+    margin-left: auto;
+}
+
+.table-unit-col {
+    background-color: rgba(255, 100, 100, 255);
+}
+.table-received-col {
+    background-color: greenyellow;
+}
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+.back-button{
+    display: none;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    top: 0px;
+    margin-right: auto;
+    cursor: pointer;
+    width: auto;
+}
+#results-table-container .rows:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+#theme-back {
+    display: flex;
+}
+.right-top-buttons-container {
+    display: flex;
+    margin-left: auto;
+    gap: 3px;
+    min-height: 100%;
+
+    
+}
+#theme-toggle {
+    margin-left: auto;
+    padding: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    min-height: 100%;
+    width: auto;
+}
+#download-template-button {
+    margin-left: auto;
+    padding: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    min-height: 100%;
+    width: auto;
+}
+
+@media (max-width: 900px) {
+    #main-container {
+        flex-direction: column;
+        height: auto;
+    }
+    #left-panel {
+        width: 100%;
+        height: 45%;
+        min-height: 500px;
+    }
+    
+    #right-panel {
+        flex-direction: column;
+        width: 100%;
+        height: 55%;
+        flex-grow: 1;
+        min-height: 500px;
+    }
+    .product-info {
+        flex-grow: 1;
+        height: 80%;
+    }
+}
