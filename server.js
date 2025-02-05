@@ -11,6 +11,7 @@ const flash = require("express-flash");
 const session = require("express-session");
 const methodOverride = require("method-override");
 const pool = require("./db");
+const PORT = process.env.PORT || 5000; 
 
 const initializePassport = require("./passport-config");
 initializePassport(passport);
@@ -90,6 +91,6 @@ function checkNotAuthenticated(req, res, next) {
     next();
 }
 
-app.listen(5000, () => {
-    console.log("Server 5000 portunda çalışıyor...");
+app.listen(PORT, () => {
+    console.log(`Server ${PORT} portunda çalışıyor...`);
 });
